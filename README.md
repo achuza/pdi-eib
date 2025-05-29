@@ -22,7 +22,7 @@ brew install podman
 
 ## Initialize Podman
 <pre>
-podman machine init --cpus 6 --memory 4096'
+podman machine init --cpus 6 --memory 4096
 podman machine start
 podman pull registry.suse.com/edge/3.2/edge-image-builder:1.1.0
 </pre>
