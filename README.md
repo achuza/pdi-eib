@@ -43,5 +43,5 @@ EIB_DIR=$(pwd)
 
 ### Build Image
 ```bash
-podman run --privileged --rm -it -v $EIB_DIR:/eib  registry.suse.com/edge/3.2/edge-image-builder:1.1.0  build --definition-file eib-config.yaml'
+podman run --privileged --rm -it -v $EIB_DIR:/eib  registry.suse.com/edge/3.2/edge-image-builder:1.1.0  build --definition-file eib-config.yaml
 ```
