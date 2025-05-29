@@ -1,0 +1,31 @@
+routes:
+  config:
+  - destination: 0.0.0.0/0
+    metric: 100
+    next-hop-address: 10.203.203.1
+    next-hop-interface: eno1
+    table-id: 254
+  - destination: 10.203.203.0/24
+    metric: 100
+    next-hop-address:
+    next-hop-interface: eno1
+    table-id: 254
+dns-resolver:
+  config:
+    server:
+    - 10.203.203.1
+    - 8.8.8.8
+interfaces:
+- name: eno0
+  type: ethernet
+  state: up
+  mac-address: 00:13:95:5C:3F:16
+  ipv4:
+    address:
+    - ip: 10.203.203.144
+      prefix-length: 24
+    dhcp: false
+    enabled: true
+  ipv6:
+    enabled: false
+
